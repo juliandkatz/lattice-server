@@ -1,0 +1,39 @@
+{
+  "name": "jdk-lattice-code-test-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "TEST=true mocha --watch server.spec.js",
+    "start": "node server.js",
+    "watch": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juliandkatz/jdk-lattice-code-test-server.git"
+  },
+  "author": "Julian Katz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juliandkatz/jdk-lattice-code-test-server/issues"
+  },
+  "homepage": "https://github.com/juliandkatz/jdk-lattice-code-test-server#readme",
+  "dependencies": {
+    "apicache": "^1.4.0",
+    "axios": "^0.18.0",
+    "cors": "^2.8.5",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.3",
+    "nodemon": "^1.18.11",
+    "supertest": "^4.0.2"
+  },
+  "standard": {
+    "env": [
+      "mocha"
+    ]
+  }
+}
