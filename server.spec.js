@@ -1,3 +1,5 @@
+/* eslint handle-callback-err:0 */
+
 const request = require('supertest')
 const server = require('./server')
 const expect = require('chai').expect
