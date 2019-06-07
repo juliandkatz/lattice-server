@@ -1,0 +1,26 @@
+apiVersion: extensions/v1beta1
+
+kind: Deployment
+
+metadata:
+  labels:
+    app: lattice-server
+  name: lattice-server
+
+spec:
+  replicas: 1
+
+  template:
+    metadata:
+      labels:
+        app: lattice-server
+    spec:
+      containers:
+      - name: lattice-server
+        image: gcr.io/galvanized-math-241423/lattice-server:v1.0.0
+        ports:
+        - containerPort: 4000
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 4000
