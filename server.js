@@ -7,7 +7,7 @@ const apicache = require('apicache') // Server-side caching
 
 // Config
 const result = require('dotenv').config()
-if (result.error) { throw result.error }
+// if (result.error) { throw result.error }
 const port = 4000
 
 // Setup

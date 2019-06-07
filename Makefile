@@ -10,6 +10,9 @@ watch:
 install:
 	npm install
 
+build-prd:
+	npm ci --only=production
+
 .PHONY: \
 	start \
 	test \
