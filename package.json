@@ -20,7 +20,7 @@
   "homepage": "https://github.com/juliandkatz/jdk-lattice-code-test-server#readme",
   "dependencies": {
     "apicache": "^1.4.0",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "cors": "^2.8.5",
     "dotenv": "^7.0.0",
     "express": "^4.16.4"
